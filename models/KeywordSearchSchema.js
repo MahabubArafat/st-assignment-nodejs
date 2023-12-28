@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const KeywordSearchSchema = new mongoose.Schema({
-  keyword: {
+const keywordSearchSchema = new mongoose.Schema({
+  queryword: {
     type: String,
   },
   timestamp: {
@@ -12,4 +12,4 @@ const KeywordSearchSchema = new mongoose.Schema({
   },
 });
 
-module.exports = Keyword = mongoose.Schema("keyword", KeywordSearchSchema);
+module.exports = mongoose.model("keyword", keywordSearchSchema);
