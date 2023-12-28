@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const searchResult = new mongoose.Schema({
+const searchResultSchema = new mongoose.Schema({
   userID: {
     type: Number,
   },
@@ -19,4 +19,4 @@ const searchResult = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("result", searchResult);
+module.exports = mongoose.model("result", searchResultSchema);
