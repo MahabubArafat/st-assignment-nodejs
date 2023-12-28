@@ -7,11 +7,16 @@ const app = express();
 dbConnect();
 
 app.get("/", (req, res) => {
-  res.send(`Your Ip is ${req.ip}`);
+  res.send(`API is responding and Healthy...`);
 });
 
 //routes defined
 app.use("/search", require("./routes/search"));
+
+//default error routers
+app.use((req, res) => {
+  res.status(404).send("404 route not found!");
+});
 
 // port defined
 const PORT = process.env.PORT || 3000;
