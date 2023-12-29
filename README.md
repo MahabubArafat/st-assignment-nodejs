@@ -127,7 +127,7 @@ Exmaple 2 : Where entered keyword did not find any match , an Empty array was re
 
 ### Notes
 
-- Keyword Validation, Assuming the keyword will be only Alphabetic only. It can be changed on requirements.
+- Keyword Validation: Assuming the keyword will be only Alphabetic only. It can be changed on requirements.
 - Didn't write any kind of sorting for response, or pagination
 - Used cloud database, for resource constraints
 - The mongoCloudURI is not exposed, This was only added to version control for testing the code in local environment, and the cluster was deleted before pushing the code into Github.
