@@ -1,3 +1,3 @@
 {
-  "mongoCloudURI": "mongodb+srv://username:password@cluster-st.t4mhodp.mongodb.net/?retryWrites=true&w=majority"
+  "mongoCloudURI": "mongodb+srv://username:password@cluster-st.clusterName.mongodb.net/?retryWrites=true&w=majority"
 }
